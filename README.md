@@ -19,6 +19,10 @@ Cricket Chronicles is a simple web app for cricket fans, offering a responsive b
 - Validates player count and budget limits before final submission.
 
 ---
+## 🎥 Demo Video
+
+Watch the full video [here](https://drive.google.com/file/d/1WFzpAFJ0OMv6hChq2DxSEXscxHTRHdWY/view?usp=drive_link).
+
 
 ## How It Works
 
