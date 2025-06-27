@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Chronicles - Fantasy Team Builder</title>
+    <link rel="stylesheet" href="fantasycss.css">
+</head>
+<body>
+    <div class="container">
+        <section class="fantasy-section">
+            <div class="fantasy-header">
+                <h2>Build Your Fantasy Cricket Team</h2>
+                <div class="budget-display">Budget: <span class="budget-amount">₹1000</span> million</div>
+            </div>
+            
+            <div class="team-builder">
+                <div class="player-pool">
+                    <h3>Player Pool</h3>
+                    <div class="player-categories">
+                        <button class="category-btn active" data-category="all">All</button>
+                        <button class="category-btn" data-category="batsman">Batsmen</button>
+                        <button class="category-btn" data-category="bowler">Bowlers</button>
+                        <button class="category-btn" data-category="allrounder">All-rounders</button>
+                        <button class="category-btn" data-category="wicketkeeper">Wicket Keepers</button>
+                    </div>
+                    <div class="player-list" id="player-list">
+                        <!-- Players will be added by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="selected-team">
+                    <h3>Your Team (0/11)</h3>
+                    <div class="selected-player-list" id="selected-players">
+                        <!-- Selected players will appear here -->
+                        <p style="color: #aaa; text-align: center;">No players selected yet</p>
+                    </div>
+                    
+                    <div class="team-stats">
+                        <div class="stat-row">
+                            <span class="stat-label">Players:</span>
+                            <span class="stat-value" id="player-count">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Budget Used:</span>
+                            <span class="stat-value" id="budget-used">₹0</span> million
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Budget Remaining:</span>
+                            <span class="stat-value" id="budget-remaining">₹1000</span> million
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Team Balance:</span>
+                            <span class="stat-value" id="team-balance">-</span>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-team" id="submit-team">Submit Team</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="fantasyjava.js"></script>
+</body>
+</html>
